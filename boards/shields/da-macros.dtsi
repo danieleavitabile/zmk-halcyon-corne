@@ -1,0 +1,129 @@
+/ {
+
+    macros {
+        
+      // Character à
+      a_gr: a_gr {
+          label = "a_gr";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_press &kp RALT>
+              , <&macro_tap &kp GRAVE >
+              , <&macro_release &kp RALT>
+              , <&macro_tap &kp A >
+              ;
+      };
+        
+      // Character è
+      e_gr: e_gr {
+          label = "e_gr";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_press &kp RALT>
+              , <&macro_tap &kp GRAVE >
+              , <&macro_release &kp RALT>
+              , <&macro_tap &kp E >
+              ;
+      };
+        
+      // Character ì
+      i_gr: i_gr {
+          label = "i_gr";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_press &kp RALT>
+              , <&macro_tap &kp GRAVE >
+              , <&macro_release &kp RALT>
+              , <&macro_tap &kp I >
+              ;
+      };
+        
+      // Character ò
+      o_gr: o_gr {
+          label = "o_gr";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_press &kp RALT>
+              , <&macro_tap &kp GRAVE >
+              , <&macro_release &kp RALT>
+              , <&macro_tap &kp O >
+              ;
+      };
+        
+      // Character ù
+      u_gr: u_gr {
+          label = "u_gr";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_press &kp RALT>
+              , <&macro_tap &kp GRAVE >
+              , <&macro_release &kp RALT>
+              , <&macro_tap &kp U >
+              ;
+      };
+
+      // Character é 
+      e_ac: e_ac {
+          label = "e_ac";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_press &kp RALT>
+              , <&macro_tap &kp E >
+              , <&macro_release &kp RALT>
+              , <&macro_tap &kp E >
+              ;
+      };
+        
+      // Key sequence for saving in vim: Esc :w Enter
+      vsave: vim_save {
+          label = "vim_save";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp ESC>
+              , <&macro_tap &kp COLON>
+              , <&macro_tap &kp W >
+              , <&macro_tap &kp RET >
+              ;
+      };
+
+      // Key sequence for saving and compilin in vimtex: Esc :w Enter Space l l
+      vtcompile: vim_tex_compile {
+          label = "vim_tex_compile";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp ESC>
+              , <&macro_tap &kp COLON>
+              , <&macro_tap &kp W>
+              , <&macro_tap &kp RET>
+              , <&macro_tap &kp SPACE>
+              , <&macro_tap &kp L>
+              , <&macro_tap &kp L>
+              ;
+      };
+        
+      // Key sequence to trigger completion in vim
+      vcomplete: vim_complete {
+          label = "vim_complete";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_press &kp LCTRL>
+              , <&macro_tap &kp X >
+              //, <&macro_release &kp LCTRL>
+              //, <&macro_press &kp LCTRL>
+              , <&macro_tap &kp O >
+              , <&macro_release &kp LCTRL>
+              ;
+      };
+        
+  };
+
+};
